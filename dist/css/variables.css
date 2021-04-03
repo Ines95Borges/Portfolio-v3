@@ -1,0 +1,13 @@
+:root {
+  --lightcolor1: #399cbd;
+  --lightcolor2: #ffb6c1;
+  --lightcolor3: #aaaaaa;
+  --bgcolor: #fff;
+  --darkcolor1: #000092;
+  --darkcolor2: #b6004c;
+  --orbitron-font: "Orbitron", "Times New Roman", sans-serif;
+  --fontSize: 1.3rem;
+  --spaceBetweenSections: 50px;
+}
+
+/*# sourceMappingURL=variables.css.map */
