@@ -48,7 +48,7 @@ const Header = () => {
           <h3>+351 910 182 440</h3>
         </div>
         <div className="hero__header-content">
-          <button className="hero__header-button-cv"><a href="#">Check my CV</a></button>
+          <button className="hero__header-button-cv"><a href="/inesCV-en.pdf" target="_blank">Check my CV</a></button>
           <h2>Inês's Portfolio Website</h2>
           <button className="hero__header-button-hire-me"><a href="#contact">Hire me!</a></button>
         </div>

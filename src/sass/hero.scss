@@ -3,6 +3,8 @@
   position: relative;
   height: 100vh;
   padding-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
 
   img{
     width: 100%;
@@ -15,13 +17,26 @@
   }
 
   &__header-contact{
-    float: right;
+    flex-grow: 1;
+    max-width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
     padding: 10px 30px 10px 10px;
 
+    @media screen and (max-width: 832px){
+      order: 0;
+    }
+    
     h3{
+      margin-left: auto;
       font-size: 1.3rem;
       color: var(--darkcolor2);
       text-shadow: 2px 2px 5px black;
+
+      @media screen and (max-width: 832px){
+        font-size: 1rem;
+      }
     }
   }
 
@@ -29,19 +44,32 @@
     width: min(100%, 450px);
     max-width: 100%;
     height: 100%;
-    border: 5px solid red;
     display: flex;
+    // flex-direction: column;
     justify-content: center;
     align-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 40px;
     padding-left: 40px;
 
+    @media screen and (max-width: 832px){
+      height: 30vh;
+      align-self: flex-end;
+      flex-direction: column;
+    }
+
     h2{
       font-size: 5rem;
       display: block;
       color: var(--darkcolor1);
       text-shadow: 5px 5px var(--lightcolor1);
+
+      @media screen and (max-width: 832px){
+        font-size: 1rem;
+        text-shadow: none;
+        color: var(--lightcolor1);
+      }
+        
     }
   }
 
