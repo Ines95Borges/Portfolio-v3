@@ -25,11 +25,11 @@ const Header = () => {
           <FaHamburger className="navbar__hamburger" onClick={() => setShowDropdownContent(!showDropdownContent)}/>
           {showDropdownContent ? 
             (<ul className="navbar__dropdown-content">
-              <li><a className="navbar__dropdown-item" href="#hero">Home</a></li>
-              <li><a className="navbar__dropdown-item" href="#about-me">About me</a></li>
-              <li><a className="navbar__dropdown-item" href="#projects">Projects</a></li>
-              <li><a className="navbar__dropdown-item" href="#experience">Experience</a></li>
-              <li><a className="navbar__dropdown-item" href="#contact">Contact</a></li>
+              <li><a className="navbar__dropdown-item" href="#hero" onClick={() => setShowDropdownContent(!showDropdownContent)}>Home</a></li>
+              <li><a className="navbar__dropdown-item" href="#about-me" onClick={() => setShowDropdownContent(!showDropdownContent)}>About me</a></li>
+              <li><a className="navbar__dropdown-item" href="#projects" onClick={() => setShowDropdownContent(!showDropdownContent)}>Projects</a></li>
+              <li><a className="navbar__dropdown-item" href="#experience" onClick={() => setShowDropdownContent(!showDropdownContent)}>Experience</a></li>
+              <li><a className="navbar__dropdown-item" href="#contact" onClick={() => setShowDropdownContent(!showDropdownContent)}>Contact</a></li>
             </ul>) : null
           }
           
