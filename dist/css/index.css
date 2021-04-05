@@ -1,33 +1,36 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   width: 100%;
   font-family: var(--orbitron-font);
   overflow-x: hidden;
   transition: all 1s linear;
   background-color: var(--bg-color);
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   width: 15px;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
   border-radius: 20px;
   background-color: var(--lightcolor2);
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: var(--darkcolor2);
 }
 
-section{
+section {
   position: relative;
   border-bottom: 5px solid var(--lightcolor3);
 }
@@ -41,3 +44,5 @@ footer {
   bottom: -10vh;
   color: var(--lightcolor3);
 }
+
+/*# sourceMappingURL=index.css.map */

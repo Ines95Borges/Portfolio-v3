@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.projects {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.projects__title {
+  margin: 40px auto;
+  color: var(--darkcolor1);
+}
+.projects__project-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 1015px) {
+  .projects__project-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat 2, auto;
+    gap: 10px;
+  }
+}
+.projects__project-container__image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.projects__project-container__image-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, 500px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  border-radius: 10px;
+}
+.projects__project-container__image-container:hover a {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.projects__project-container__image-container:hover p {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.projects__project-container__image-container p {
+  display: none;
+  color: var(--lightcolor2);
+  font-size: 1.1rem;
+}
+.projects__project-container__image-container a {
+  display: none;
+  color: var(--lightcolor1);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.projects__project-container__image-container img {
+  width: min(100%, 500px);
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.projects__project-container__technology-container {
+  width: min(100%, 500px);
+  background-color: var(--lightcolor3);
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.projects__project-container__technology-container h4 {
+  font-size: 1.5rem;
+  color: var(--darkcolor2);
+  font-weight: bold;
+  text-align: center;
+}
+.projects__project-container__technology-container ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.projects__project-container__technology-container ul li {
+  font-size: 1.2rem;
+}
+.projects__project-container__technology-container ul li::before {
+  content: "✔️";
+}
+
+/*# sourceMappingURL=projects.css.map */

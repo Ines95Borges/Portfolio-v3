@@ -5,8 +5,17 @@ const Header = () => {
   const [showDropdownContent, setShowDropdownContent] = useState(false);
 
   useEffect(() => {
-
-  });
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".navbar").style.top = "0";
+      } else {
+        document.querySelector(".navbar").style.top = "-10vh";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }, []);
 
   return(
     <header>
@@ -20,7 +29,6 @@ const Header = () => {
               <li><a className="navbar__dropdown-item" href="#about-me">About me</a></li>
               <li><a className="navbar__dropdown-item" href="#projects">Projects</a></li>
               <li><a className="navbar__dropdown-item" href="#experience">Experience</a></li>
-              <li><a className="navbar__dropdown-item" href="#studies">Academic formation</a></li>
               <li><a className="navbar__dropdown-item" href="#contact">Contact</a></li>
             </ul>) : null
           }
@@ -31,14 +39,13 @@ const Header = () => {
           <li><a href="#about-me">About me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#studies">Academic formation</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       {/* End of Navigation Bar */}
 
       {/* Hero */}
-      <div className="hero">
+      <div id="hero" className="hero">
         <picture>
           <source media="(min-width: 769px)" srcSet="/images/foto_portfolio.png" alt="me" />
           <img src="/images/foto_portfolio300.png" alt="me" />

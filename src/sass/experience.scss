@@ -1,0 +1,40 @@
+.experience{
+  padding: 50px;
+  min-height: 100vh;
+
+  h2{
+    margin: 20px auto;
+    text-align: center;
+    color: var(--darkcolor1);
+    font-size: 1.5rem;
+  }
+
+  ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, min(100%, 300px)));
+    list-style-type: none;
+    justify-content: center;
+    row-gap: 40px;
+
+    li{
+      list-style: '👉  ';
+
+      div{
+        font-size: var(--fontSize);
+        color: var(--lightcolor1);
+      }
+
+      span{
+        font-size: 0;
+        border: 8px solid var(--lightcolor3);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      }
+
+      .experience__mark{
+        border: 8px solid var(--darkcolor2);
+      }
+    }
+
+  }
+}
