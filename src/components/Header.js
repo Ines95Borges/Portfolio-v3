@@ -56,7 +56,7 @@ const Header = () => {
         </div>
         <div className="hero__header-content">
           <button className="hero__header-button-cv"><a href="/inesCV-en.pdf" target="_blank">Check my CV</a></button>
-          <h2>Inês's Portfolio Website</h2>
+          <h2>Inê<span className="hero__variable">s</span>'s Portf<span className="hero__variable">o</span>lio We<span className="hero__variable">b</span>site</h2>
           <button className="hero__header-button-hire-me"><a href="#contact">Hire me!</a></button>
         </div>
       </div>

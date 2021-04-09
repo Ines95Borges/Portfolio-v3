@@ -73,6 +73,19 @@
     }
   }
 
+  &__variable{
+    animation: vary-letters 3s alternate infinite linear;
+
+    @keyframes vary-letters {
+      from{
+        font-weight: 400;
+      }
+      to{
+        font-weight: 900;
+      }
+    }
+  }
+
   &__header-button-cv{
     width: 200px;
     justify-self: center;
